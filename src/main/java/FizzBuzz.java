@@ -14,7 +14,7 @@ public class FizzBuzz {
 
     private static void fizzBuzz() {
         for (int i=0;i<=100 ;i ++){
-            Object number = i%3 == 0 ? "Fizz" : i%5==0 ? "Buzz" : i;
+            Object number = i%3  == 0 ? (i%5 == 0 ? "Fizz Buzz" : "Fizz")  : (1%5 == 0 ? "Buzz" : i);
             System.out.println(number.toString());
         }
     }
